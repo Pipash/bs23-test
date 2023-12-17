@@ -1,0 +1,30 @@
+version: '3'
+services:
+  cache:
+    container_name: redis
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6479:6379'
+    command: redis-server --save 20 1 --loglevel warning
+    networks:
+      - user-app-network
+  user-app-container:
+    image: user-app:1
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    volumes:
+      - /data/user-app
+    ports:
+      - "8869:8862"
+    links:
+      - cache
+    depends_on:
+      - cache
+    networks:
+      - user-app-network
+
+networks:
+  user-app-network:
+    driver: bridge

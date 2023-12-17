@@ -1,0 +1,500 @@
+2023-12-17 12:46:59.005  INFO 14528 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 14528 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 12:46:59.020  INFO 14528 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 12:47:00.401  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 12:47:00.402  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 12:47:00.468  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2023-12-17 12:47:00.489  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 12:47:00.490  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 12:47:00.510  INFO 14528 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 12:47:00.511  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-12-17 12:47:01.009  INFO 14528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 12:47:01.018  INFO 14528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 12:47:01.019  INFO 14528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 12:47:01.118  INFO 14528 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 12:47:01.118  INFO 14528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2014 ms
+2023-12-17 12:47:01.222  INFO 14528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 12:47:01.381  INFO 14528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 12:47:01.393  INFO 14528 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 12:47:01.515  INFO 14528 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 12:47:01.567  INFO 14528 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 12:47:01.701  INFO 14528 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 12:47:01.784  INFO 14528 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 12:47:02.278  INFO 14528 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 12:47:02.285  INFO 14528 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 12:47:03.040  INFO 14528 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50b2ba2c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12478b4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@270be080, org.springframework.security.web.header.HeaderWriterFilter@7fa8fff, org.springframework.security.web.authentication.logout.LogoutFilter@48f2d51d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f35e39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15c3585, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64921450, org.springframework.security.web.session.SessionManagementFilter@5a010eec, org.springframework.security.web.access.ExceptionTranslationFilter@558575fe, org.springframework.security.web.access.intercept.AuthorizationFilter@73905dff]
+2023-12-17 12:47:03.091  WARN 14528 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 12:47:03.545  INFO 14528 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 12:47:03.585  INFO 14528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 12:47:03.601  INFO 14528 --- [main] com.test.user.UserService                : Started UserService in 5.298 seconds (JVM running for 6.501)
+2023-12-17 12:47:04.041  INFO 14528 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 12:47:04.043  INFO 14528 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 12:47:04.045  INFO 14528 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-17 12:54:13.682  INFO 14528 --- [http-nio-8862-exec-9] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 12:54:13.683  INFO 14528 --- [http-nio-8862-exec-9] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 12:54:13.855  INFO 14528 --- [http-nio-8862-exec-9] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 12:56:35.118  INFO 14528 --- [http-nio-8862-exec-7] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 12:56:35.119  INFO 14528 --- [http-nio-8862-exec-7] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 12:56:35.139  INFO 14528 --- [http-nio-8862-exec-7] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 12:56:35.184  INFO 14528 --- [http-nio-8862-exec-7] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 12:56:35.184  INFO 14528 --- [http-nio-8862-exec-7] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 12:59:10.533  INFO 14528 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 12:59:10.538  INFO 14528 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to update
+2023-12-17 12:59:10.539  INFO 14528 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 12:59:10.656  INFO 14528 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : user update complete in modifyUser of AuthController
+2023-12-17 12:59:16.688  INFO 14528 --- [http-nio-8862-exec-10] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 12:59:16.689  INFO 14528 --- [http-nio-8862-exec-10] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 12:59:16.691  INFO 14528 --- [http-nio-8862-exec-10] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 12:59:16.694  INFO 14528 --- [http-nio-8862-exec-10] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 12:59:16.694  INFO 14528 --- [http-nio-8862-exec-10] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:00:16.733  INFO 14528 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:00:16.739  INFO 14528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:00:16.748  INFO 14528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 13:00:22.236  INFO 15888 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 15888 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 13:00:22.240  INFO 15888 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 13:00:23.831  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:00:23.831  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 13:00:23.897  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-12-17 13:00:23.908  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:00:23.909  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 13:00:23.922  INFO 15888 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 13:00:23.922  INFO 15888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-12-17 13:00:24.397  INFO 15888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 13:00:24.407  INFO 15888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 13:00:24.407  INFO 15888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 13:00:24.509  INFO 15888 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 13:00:24.510  INFO 15888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2186 ms
+2023-12-17 13:00:24.624  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 13:00:24.772  INFO 15888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 13:00:24.783  INFO 15888 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 13:00:24.903  INFO 15888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 13:00:24.940  INFO 15888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 13:00:25.045  INFO 15888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 13:00:25.118  INFO 15888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 13:00:25.563  INFO 15888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 13:00:25.570  INFO 15888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:00:26.117  INFO 15888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c07023, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ae87a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@15c3585, org.springframework.security.web.header.HeaderWriterFilter@2a9e7b4d, org.springframework.security.web.authentication.logout.LogoutFilter@2119b989, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@468646ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@384f0e32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@774189d0, org.springframework.security.web.session.SessionManagementFilter@11896124, org.springframework.security.web.access.ExceptionTranslationFilter@2175d53f, org.springframework.security.web.access.intercept.AuthorizationFilter@152d2a58]
+2023-12-17 13:00:26.171  WARN 15888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 13:00:26.678  INFO 15888 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 13:00:26.718  INFO 15888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 13:00:26.735  INFO 15888 --- [main] com.test.user.UserService                : Started UserService in 5.064 seconds (JVM running for 6.062)
+2023-12-17 13:00:27.189  INFO 15888 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 13:00:27.191  INFO 15888 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 13:00:27.195  INFO 15888 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-17 13:01:32.704  INFO 15888 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:01:32.705  INFO 15888 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:01:32.910  INFO 15888 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:02:57.763  INFO 15888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:02:57.767  INFO 15888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:02:57.773  INFO 15888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 13:03:03.844  INFO 16184 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 16184 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 13:03:03.851  INFO 16184 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 13:03:05.022  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:03:05.023  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 13:03:05.103  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-12-17 13:03:05.114  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:03:05.115  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 13:03:05.130  INFO 16184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 13:03:05.131  INFO 16184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-12-17 13:03:05.618  INFO 16184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 13:03:05.624  INFO 16184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 13:03:05.624  INFO 16184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 13:03:05.702  INFO 16184 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 13:03:05.702  INFO 16184 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2023-12-17 13:03:05.800  INFO 16184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 13:03:05.916  INFO 16184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 13:03:05.927  INFO 16184 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 13:03:06.022  INFO 16184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 13:03:06.047  INFO 16184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 13:03:06.128  INFO 16184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 13:03:06.194  INFO 16184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 13:03:06.616  INFO 16184 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 13:03:06.623  INFO 16184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:03:07.144  INFO 16184 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64921450, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18918d70, org.springframework.security.web.context.SecurityContextPersistenceFilter@78f35e39, org.springframework.security.web.header.HeaderWriterFilter@2175d53f, org.springframework.security.web.authentication.logout.LogoutFilter@1018f702, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69fe8c75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@468646ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d373794, org.springframework.security.web.session.SessionManagementFilter@180e33b0, org.springframework.security.web.access.ExceptionTranslationFilter@180fb796, org.springframework.security.web.access.intercept.AuthorizationFilter@5d67bf4d]
+2023-12-17 13:03:07.234  WARN 16184 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 13:03:07.712  INFO 16184 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 13:03:07.753  INFO 16184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 13:03:07.769  INFO 16184 --- [main] com.test.user.UserService                : Started UserService in 4.446 seconds (JVM running for 5.344)
+2023-12-17 13:03:08.011  INFO 16184 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 13:03:08.012  INFO 16184 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 13:03:08.016  INFO 16184 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-17 13:03:51.497  INFO 16184 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:03:51.497  INFO 16184 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:03:51.709  INFO 16184 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:03:58.567  INFO 16184 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:03:58.568  INFO 16184 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:03:58.584  INFO 16184 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : data fetched from redis cache
+2023-12-17 13:03:58.597  INFO 16184 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:04:32.771  INFO 16184 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:04:32.779  INFO 16184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:04:32.788  INFO 16184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 13:04:38.607  INFO 16419 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 16419 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 13:04:38.609  INFO 16419 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 13:04:39.892  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:04:39.893  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 13:04:39.955  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2023-12-17 13:04:39.965  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:04:39.966  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 13:04:39.976  INFO 16419 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 13:04:39.977  INFO 16419 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-12-17 13:04:40.376  INFO 16419 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 13:04:40.382  INFO 16419 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 13:04:40.382  INFO 16419 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 13:04:40.448  INFO 16419 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 13:04:40.448  INFO 16419 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1768 ms
+2023-12-17 13:04:40.541  INFO 16419 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 13:04:40.673  INFO 16419 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 13:04:40.692  INFO 16419 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 13:04:40.795  INFO 16419 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 13:04:40.822  INFO 16419 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 13:04:40.909  INFO 16419 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 13:04:40.976  INFO 16419 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 13:04:41.356  INFO 16419 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 13:04:41.363  INFO 16419 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:04:41.900  INFO 16419 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18918d70, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d373794, org.springframework.security.web.context.SecurityContextPersistenceFilter@11896124, org.springframework.security.web.header.HeaderWriterFilter@29ae2517, org.springframework.security.web.authentication.logout.LogoutFilter@5400db7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@633cad4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4056cdb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7304ca87, org.springframework.security.web.session.SessionManagementFilter@270be080, org.springframework.security.web.access.ExceptionTranslationFilter@79ae3fb1, org.springframework.security.web.access.intercept.AuthorizationFilter@31de8099]
+2023-12-17 13:04:41.960  WARN 16419 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 13:04:42.427  INFO 16419 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 13:04:42.494  INFO 16419 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 13:04:42.535  INFO 16419 --- [main] com.test.user.UserService                : Started UserService in 4.508 seconds (JVM running for 5.639)
+2023-12-17 13:04:43.049  INFO 16419 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 13:04:43.051  INFO 16419 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 13:04:43.054  INFO 16419 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-17 13:05:03.982  INFO 16419 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:05:03.983  INFO 16419 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:05:04.168  INFO 16419 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:05:07.936  INFO 16419 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:05:07.936  INFO 16419 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:05:07.937  INFO 16419 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:05:07.957  INFO 16419 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 13:05:07.958  INFO 16419 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:05:29.717  INFO 16419 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:05:29.736  INFO 16419 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to update
+2023-12-17 13:05:29.736  INFO 16419 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:05:29.851  INFO 16419 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : user update complete in modifyUser of AuthController
+2023-12-17 13:05:55.283  INFO 16419 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:05:55.292  INFO 16419 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:05:55.305  INFO 16419 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 13:06:00.938  INFO 16661 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 16661 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 13:06:00.945  INFO 16661 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 13:06:02.243  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:06:02.244  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 13:06:02.292  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-12-17 13:06:02.302  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:06:02.303  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 13:06:02.315  INFO 16661 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 13:06:02.315  INFO 16661 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-12-17 13:06:02.731  INFO 16661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 13:06:02.738  INFO 16661 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 13:06:02.738  INFO 16661 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 13:06:02.813  INFO 16661 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 13:06:02.813  INFO 16661 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1771 ms
+2023-12-17 13:06:02.905  INFO 16661 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 13:06:03.000  INFO 16661 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 13:06:03.009  INFO 16661 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 13:06:03.109  INFO 16661 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 13:06:03.134  INFO 16661 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 13:06:03.255  INFO 16661 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 13:06:03.323  INFO 16661 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 13:06:03.791  INFO 16661 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 13:06:03.798  INFO 16661 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:06:04.305  INFO 16661 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1db9c2cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32e7df65, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c07023, org.springframework.security.web.header.HeaderWriterFilter@5400db7e, org.springframework.security.web.authentication.logout.LogoutFilter@31cddb11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774189d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a012678, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@421d7900, org.springframework.security.web.session.SessionManagementFilter@18918d70, org.springframework.security.web.access.ExceptionTranslationFilter@4880a9d, org.springframework.security.web.access.intercept.AuthorizationFilter@2c51c756]
+2023-12-17 13:06:04.355  WARN 16661 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 13:06:04.836  INFO 16661 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 13:06:04.886  INFO 16661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 13:06:04.907  INFO 16661 --- [main] com.test.user.UserService                : Started UserService in 4.641 seconds (JVM running for 5.644)
+2023-12-17 13:06:05.369  INFO 16661 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 13:06:05.375  INFO 16661 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 13:06:05.379  INFO 16661 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-17 13:06:33.630  INFO 16661 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:06:33.631  INFO 16661 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:06:33.808  INFO 16661 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:06:38.386  INFO 16661 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:06:38.386  INFO 16661 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:06:38.401  INFO 16661 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:06:38.430  INFO 16661 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 13:06:38.430  INFO 16661 --- [http-nio-8862-exec-3] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:06:42.040  INFO 16661 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:06:42.044  INFO 16661 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to update
+2023-12-17 13:06:42.044  INFO 16661 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:06:42.154  INFO 16661 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : user update complete in modifyUser of AuthController
+2023-12-17 13:06:46.220  INFO 16661 --- [http-nio-8862-exec-5] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:06:46.221  INFO 16661 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:06:46.223  INFO 16661 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:06:46.227  INFO 16661 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 13:06:46.227  INFO 16661 --- [http-nio-8862-exec-5] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:07:21.973  INFO 16661 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : deleting a single user started in removeUser of AuthController
+2023-12-17 13:07:21.978  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to deletion
+2023-12-17 13:07:21.979  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting deleteUser inside AuthServiceImpl to delete single user:
+2023-12-17 13:07:21.992  INFO 16661 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : user deletion completed in removeUser of AuthController
+2023-12-17 13:09:17.745  WARN 16661 --- [http-nio-8862-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.test.user.component.ServiceResponse> com.test.user.controller.AuthController.addUser(com.test.user.payload.SignupRequest): [Field error in object 'signupRequest' on field 'password': rejected value [null]; codes [NotBlank.signupRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [signupRequest.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
+2023-12-17 13:11:16.443  INFO 16661 --- [http-nio-8862-exec-1] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:11:16.443  INFO 16661 --- [http-nio-8862-exec-1] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:11:16.445  INFO 16661 --- [http-nio-8862-exec-1] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:11:32.884  INFO 16661 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:11:32.884  INFO 16661 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:11:32.986  INFO 16661 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:11:38.718  INFO 16661 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:11:38.718  INFO 16661 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:11:38.719  INFO 16661 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:14:12.763  INFO 16661 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:14:12.763  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:14:12.765  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:14:12.770  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 13:14:12.770  INFO 16661 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:15:20.983  INFO 16661 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:15:20.983  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:15:20.984  INFO 16661 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:16:17.214  INFO 16661 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:16:17.220  INFO 16661 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:16:17.229  INFO 16661 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 13:16:22.617  INFO 17675 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 17675 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 13:16:22.622  INFO 17675 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 13:16:24.145  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:16:24.146  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 13:16:24.200  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2023-12-17 13:16:24.222  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 13:16:24.223  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 13:16:24.239  INFO 17675 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 13:16:24.239  INFO 17675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-12-17 13:16:24.876  INFO 17675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 13:16:24.888  INFO 17675 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 13:16:24.888  INFO 17675 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 13:16:24.991  INFO 17675 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 13:16:24.991  INFO 17675 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2253 ms
+2023-12-17 13:16:25.159  INFO 17675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 13:16:25.369  INFO 17675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 13:16:25.379  INFO 17675 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 13:16:25.492  INFO 17675 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 13:16:25.517  INFO 17675 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 13:16:25.602  INFO 17675 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 13:16:25.697  INFO 17675 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 13:16:26.504  INFO 17675 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 13:16:26.512  INFO 17675 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:16:27.659  INFO 17675 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c07023, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ae87a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@15c3585, org.springframework.security.web.header.HeaderWriterFilter@2a9e7b4d, org.springframework.security.web.authentication.logout.LogoutFilter@2119b989, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@468646ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@384f0e32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@774189d0, org.springframework.security.web.session.SessionManagementFilter@11896124, org.springframework.security.web.access.ExceptionTranslationFilter@2175d53f, org.springframework.security.web.access.intercept.AuthorizationFilter@152d2a58]
+2023-12-17 13:16:27.778  WARN 17675 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 13:16:28.477  INFO 17675 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 13:16:28.516  INFO 17675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 13:16:28.536  INFO 17675 --- [main] com.test.user.UserService                : Started UserService in 6.459 seconds (JVM running for 7.235)
+2023-12-17 13:16:28.838  INFO 17675 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 13:16:28.843  INFO 17675 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 13:16:28.852  INFO 17675 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-12-17 13:17:03.472  INFO 17675 --- [http-nio-8862-exec-1] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 13:17:03.472  INFO 17675 --- [http-nio-8862-exec-1] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 13:17:03.638  INFO 17675 --- [http-nio-8862-exec-1] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 13:17:09.163  INFO 17675 --- [http-nio-8862-exec-5] com.test.user.controller.AuthController  : getting a single user started in getUserDetails of AuthController
+2023-12-17 13:17:09.164  INFO 17675 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 13:17:09.181  INFO 17675 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 13:17:09.209  INFO 17675 --- [http-nio-8862-exec-5] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 13:17:09.210  INFO 17675 --- [http-nio-8862-exec-5] com.test.user.controller.AuthController  : user update complete in getUserDetails of AuthController
+2023-12-17 13:17:21.183  INFO 17675 --- [http-nio-8862-exec-9] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:17:21.190  INFO 17675 --- [http-nio-8862-exec-9] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to update
+2023-12-17 13:17:21.190  INFO 17675 --- [http-nio-8862-exec-9] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:17:21.309  INFO 17675 --- [http-nio-8862-exec-9] com.test.user.controller.AuthController  : user update complete in modifyUser of AuthController
+2023-12-17 13:17:27.667  INFO 17675 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:17:27.672  INFO 17675 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : redis data removed due to update
+2023-12-17 13:17:27.672  INFO 17675 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:17:34.161  INFO 17675 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:17:34.162  INFO 17675 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:17:34.264  INFO 17675 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : user update complete in modifyUser of AuthController
+2023-12-17 13:18:53.821  INFO 17675 --- [http-nio-8862-exec-4] com.test.user.controller.AuthController  : updating a single user in modifyUser of AuthController
+2023-12-17 13:18:53.822  INFO 17675 --- [http-nio-8862-exec-4] c.test.user.serviceImpl.AuthServiceImpl  : starting updateUser inside AuthServiceImpl to update single user:
+2023-12-17 13:20:31.517  INFO 17675 --- [http-nio-8862-exec-7] com.test.user.controller.AuthController  : deleting a single user started in removeUser of AuthController
+2023-12-17 13:20:31.519  INFO 17675 --- [http-nio-8862-exec-7] c.test.user.serviceImpl.AuthServiceImpl  : starting deleteUser inside AuthServiceImpl to delete single user:
+2023-12-17 13:20:31.528  INFO 17675 --- [http-nio-8862-exec-7] com.test.user.controller.AuthController  : user deletion completed in removeUser of AuthController
+2023-12-17 13:20:55.003  INFO 17675 --- [http-nio-8862-exec-6] com.test.user.controller.AuthController  : deleting a single user started in removeUser of AuthController
+2023-12-17 13:20:55.006  INFO 17675 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting deleteUser inside AuthServiceImpl to delete single user:
+2023-12-17 13:37:40.954  INFO 17675 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 13:37:40.967  INFO 17675 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 13:37:40.975  INFO 17675 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 14:53:11.130  INFO 30391 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 30391 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 14:53:11.133  INFO 30391 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 14:53:12.395  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 14:53:12.395  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 14:53:12.457  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2023-12-17 14:53:12.473  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 14:53:12.474  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 14:53:12.492  INFO 30391 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 14:53:12.492  INFO 30391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-12-17 14:53:13.036  INFO 30391 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 14:53:13.042  INFO 30391 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 14:53:13.042  INFO 30391 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 14:53:13.118  INFO 30391 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 14:53:13.119  INFO 30391 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1907 ms
+2023-12-17 14:53:13.240  INFO 30391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 14:53:13.392  INFO 30391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 14:53:13.403  INFO 30391 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 14:53:13.532  INFO 30391 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 14:53:13.582  INFO 30391 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 14:53:13.709  INFO 30391 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 14:53:13.801  INFO 30391 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 14:53:14.317  INFO 30391 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 14:53:14.327  INFO 30391 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 14:53:15.130  INFO 30391 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34114276, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73c6ae15, org.springframework.security.web.context.SecurityContextPersistenceFilter@24bdd996, org.springframework.security.web.header.HeaderWriterFilter@44d6f9cf, org.springframework.security.web.authentication.logout.LogoutFilter@13e5b262, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f602930, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d126f07, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5923210, org.springframework.security.web.session.SessionManagementFilter@52b6561b, org.springframework.security.web.access.ExceptionTranslationFilter@6802c10e, org.springframework.security.web.access.intercept.AuthorizationFilter@646ddc20]
+2023-12-17 14:53:15.187  WARN 30391 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 14:53:15.709  INFO 30391 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 14:53:15.796  INFO 30391 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 14:53:15.813  INFO 30391 --- [main] com.test.user.UserService                : Started UserService in 5.231 seconds (JVM running for 6.124)
+2023-12-17 14:53:16.154  INFO 30391 --- [RMI TCP Connection(3)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 14:53:16.160  INFO 30391 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 14:53:16.160  INFO 30391 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 14:53:16.162  INFO 30391 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-17 14:53:16.183  INFO 30391 --- [RMI TCP Connection(3)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#25f73119:0/SimpleConnection@2363369e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59198]
+2023-12-17 14:53:16.594  WARN 30391 --- [boundedElastic-1] o.s.b.a.r.RedisReactiveHealthIndicator   : Redis health check failed
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to redis:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86) ~[reactor-core-3.4.29.jar:3.4.29]
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227) ~[reactor-core-3.4.29.jar:3.4.29]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.29.jar:3.4.29]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.29.jar:3.4.29]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to redis:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-6.1.10.RELEASE.jar:6.1.10.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-6.1.10.RELEASE.jar:6.1.10.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330) ~[lettuce-core-6.1.10.RELEASE.jar:6.1.10.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216) ~[lettuce-core-6.1.10.RELEASE.jar:6.1.10.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595) ~[spring-data-redis-2.7.12.jar:2.7.12]
+	... 14 common frames omitted
+Caused by: java.net.UnknownHostException: redis: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:930) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1386) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1307) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1257) ~[na:na]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.base/java.security.AccessController.doPrivileged(Native Method) ~[na:na]
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106) ~[netty-resolver-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:206) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:180) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:166) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:990) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.92.Final.jar:4.1.92.Final]
+	... 1 common frames omitted
+
+2023-12-17 14:53:25.244  INFO 30391 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 14:53:25.259  INFO 30391 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 14:53:25.277  INFO 30391 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 14:53:50.292  INFO 30615 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 30615 (/var/www/html/user-service/target/classes started by pipash in /var/www/html/user-service)
+2023-12-17 14:53:50.296  INFO 30615 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 14:53:51.583  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 14:53:51.584  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 14:53:51.632  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-12-17 14:53:51.642  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 14:53:51.643  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 14:53:51.655  INFO 30615 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 14:53:51.656  INFO 30615 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-12-17 14:53:52.131  INFO 30615 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 14:53:52.138  INFO 30615 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 14:53:52.138  INFO 30615 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 14:53:52.244  INFO 30615 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 14:53:52.244  INFO 30615 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+2023-12-17 14:53:52.375  INFO 30615 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 14:53:52.501  INFO 30615 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 14:53:52.512  INFO 30615 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 14:53:52.638  INFO 30615 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 14:53:52.670  INFO 30615 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 14:53:52.760  INFO 30615 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 14:53:52.879  INFO 30615 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 14:53:53.311  INFO 30615 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 14:53:53.318  INFO 30615 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 14:53:54.045  INFO 30615 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73c6ae15, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5923210, org.springframework.security.web.context.SecurityContextPersistenceFilter@445b4594, org.springframework.security.web.header.HeaderWriterFilter@34f32575, org.springframework.security.web.authentication.logout.LogoutFilter@6500e886, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57777c23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71689ee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70dd79f7, org.springframework.security.web.session.SessionManagementFilter@7505dcab, org.springframework.security.web.access.ExceptionTranslationFilter@341889a1, org.springframework.security.web.access.intercept.AuthorizationFilter@22561412]
+2023-12-17 14:53:54.102  WARN 30615 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 14:53:54.657  INFO 30615 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 14:53:54.767  INFO 30615 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 14:53:54.788  INFO 30615 --- [main] com.test.user.UserService                : Started UserService in 4.976 seconds (JVM running for 5.783)
+2023-12-17 14:53:55.022  INFO 30615 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 14:53:55.027  INFO 30615 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 14:53:55.028  INFO 30615 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 14:53:55.032  INFO 30615 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-12-17 14:53:55.068  INFO 30615 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3c38e2bf:0/SimpleConnection@691071bf [delegate=amqp://guest@127.0.0.1:5672/, localPort= 45006]
+2023-12-17 14:54:56.196  INFO 30615 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : creating user started in addUser of AuthController
+2023-12-17 14:54:56.197  INFO 30615 --- [http-nio-8862-exec-2] c.test.user.serviceImpl.AuthServiceImpl  : user creation started inside createUser method in AuthServiceImpl
+2023-12-17 14:54:56.375  INFO 30615 --- [http-nio-8862-exec-2] com.test.user.controller.AuthController  : user creation is complete in addUser of AuthController
+2023-12-17 14:55:14.504  INFO 30615 --- [http-nio-8862-exec-3] c.t.user.controller.PublisherController  : getting a single user started in sendUserInfo of PublisherController
+2023-12-17 14:55:14.504  INFO 30615 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 14:55:14.524  INFO 30615 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : fetching data from database
+2023-12-17 14:55:14.552  INFO 30615 --- [http-nio-8862-exec-3] c.test.user.serviceImpl.AuthServiceImpl  : data added to redis
+2023-12-17 14:55:14.552  INFO 30615 --- [http-nio-8862-exec-3] c.t.user.controller.PublisherController  : getting a single user complete in sendUserInfo of PublisherController
+2023-12-17 14:56:23.974  INFO 30615 --- [http-nio-8862-exec-6] c.t.user.controller.PublisherController  : getting a single user started in sendUserInfo of PublisherController
+2023-12-17 14:56:23.974  INFO 30615 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 14:56:23.976  INFO 30615 --- [http-nio-8862-exec-6] c.test.user.serviceImpl.AuthServiceImpl  : data fetched from redis cache
+2023-12-17 14:56:23.988  INFO 30615 --- [http-nio-8862-exec-6] c.t.user.controller.PublisherController  : getting a single user complete in sendUserInfo of PublisherController
+2023-12-17 14:57:33.221  INFO 30615 --- [http-nio-8862-exec-9] c.t.user.controller.PublisherController  : getting a single user started in sendUserInfo of PublisherController
+2023-12-17 14:57:33.221  INFO 30615 --- [http-nio-8862-exec-9] c.test.user.serviceImpl.AuthServiceImpl  : starting getUser inside AuthServiceImpl to get single user slot:
+2023-12-17 14:57:33.224  INFO 30615 --- [http-nio-8862-exec-9] c.test.user.serviceImpl.AuthServiceImpl  : data fetched from redis cache
+2023-12-17 14:57:33.225  INFO 30615 --- [http-nio-8862-exec-9] c.t.user.controller.PublisherController  : getting a single user complete in sendUserInfo of PublisherController
+2023-12-17 15:01:28.421  INFO 30615 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 15:01:28.429  INFO 30615 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-17 15:01:28.437  INFO 30615 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-17 15:03:46.605  INFO 32412 --- [main] com.test.user.UserService                : Starting UserService using Java 11.0.21 on pipash with PID 32412 (/var/www/html/bs23-test/user-service/target/classes started by pipash in /var/www/html/bs23-test/user-service)
+2023-12-17 15:03:46.616  INFO 32412 --- [main] com.test.user.UserService                : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 15:03:48.544  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 15:03:48.545  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-17 15:03:48.594  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-12-17 15:03:48.605  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-17 15:03:48.606  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-12-17 15:03:48.622  INFO 32412 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.test.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-12-17 15:03:48.622  INFO 32412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-12-17 15:03:49.249  INFO 32412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8862 (http)
+2023-12-17 15:03:49.258  INFO 32412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 15:03:49.258  INFO 32412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 15:03:49.350  INFO 32412 --- [main] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring embedded WebApplicationContext
+2023-12-17 15:03:49.350  INFO 32412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2520 ms
+2023-12-17 15:03:49.565  INFO 32412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-17 15:03:49.694  INFO 32412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-17 15:03:49.707  INFO 32412 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:user_service'
+2023-12-17 15:03:49.850  INFO 32412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-17 15:03:49.887  INFO 32412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-17 15:03:49.973  INFO 32412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-17 15:03:50.043  INFO 32412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-17 15:03:50.560  INFO 32412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-17 15:03:50.567  INFO 32412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-17 15:03:51.539  INFO 32412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4280b20b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e4d8cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@52b6561b, org.springframework.security.web.header.HeaderWriterFilter@341889a1, org.springframework.security.web.authentication.logout.LogoutFilter@3889c343, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d94a966, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57777c23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b37d1a4, org.springframework.security.web.session.SessionManagementFilter@1f370472, org.springframework.security.web.access.ExceptionTranslationFilter@3dbf3bc, org.springframework.security.web.access.intercept.AuthorizationFilter@6a358906]
+2023-12-17 15:03:51.604  WARN 32412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-17 15:03:52.265  INFO 32412 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-17 15:03:52.380  INFO 32412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8862 (http) with context path '/user-service'
+2023-12-17 15:03:52.402  INFO 32412 --- [main] com.test.user.UserService                : Started UserService in 6.635 seconds (JVM running for 8.024)
+2023-12-17 15:03:52.624  INFO 32412 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 15:03:52.630  INFO 32412 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/user-service]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-17 15:03:52.630  INFO 32412 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-17 15:03:52.636  INFO 32412 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-12-17 15:03:52.764  INFO 32412 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#17d45cfb:0/SimpleConnection@44d4612f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 33548]

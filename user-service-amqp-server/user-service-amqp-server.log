@@ -1,0 +1,26 @@
+2023-12-17 14:57:16.101  INFO 30954 --- [main] u.s.a.s.UserServiceAMQPServerApplication : Starting UserServiceAMQPServerApplication using Java 11.0.21 on pipash with PID 30954 (/var/www/html/user-service-amqp-server/target/classes started by pipash in /var/www/html/user-service-amqp-server)
+2023-12-17 14:57:16.104  INFO 30954 --- [main] u.s.a.s.UserServiceAMQPServerApplication : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 14:57:17.408  INFO 30954 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-12-17 14:57:17.414  INFO 30954 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 14:57:17.414  INFO 30954 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 14:57:17.472  INFO 30954 --- [main] .a.c.c.C.[.[.[/user-service-amqp-server] : Initializing Spring embedded WebApplicationContext
+2023-12-17 14:57:17.472  INFO 30954 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2023-12-17 14:57:17.982  INFO 30954 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/user-service-amqp-server'
+2023-12-17 14:57:17.984  INFO 30954 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 14:57:18.016  INFO 30954 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#65bdd558:0/SimpleConnection@6d6d480c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56908]
+2023-12-17 14:57:18.056  INFO 30954 --- [main] u.s.a.s.UserServiceAMQPServerApplication : Started UserServiceAMQPServerApplication in 2.379 seconds (JVM running for 3.222)
+2023-12-17 14:57:33.237  INFO 30954 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] .s.a.s.c.UserServiceAMQPServerController : server User(id=1, username=someone, email=abc@abc.com, password=null)
+2023-12-17 15:01:22.009  INFO 30954 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-12-17 15:01:22.334  INFO 30954 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-12-17 15:01:22.359  INFO 30954 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2023-12-17 15:05:42.108  INFO 32758 --- [main] u.s.a.s.UserServiceAMQPServerApplication : Starting UserServiceAMQPServerApplication using Java 11.0.21 on pipash with PID 32758 (/var/www/html/bs23-test/user-service-amqp-server/target/classes started by pipash in /var/www/html/bs23-test/user-service-amqp-server)
+2023-12-17 15:05:42.112  INFO 32758 --- [main] u.s.a.s.UserServiceAMQPServerApplication : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 15:05:44.415  INFO 32758 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-12-17 15:05:44.424  INFO 32758 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-17 15:05:44.424  INFO 32758 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-12-17 15:05:44.570  INFO 32758 --- [main] .a.c.c.C.[.[.[/user-service-amqp-server] : Initializing Spring embedded WebApplicationContext
+2023-12-17 15:05:44.573  INFO 32758 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2397 ms
+2023-12-17 15:05:45.775  INFO 32758 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/user-service-amqp-server'
+2023-12-17 15:05:45.778  INFO 32758 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 15:05:45.806  INFO 32758 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5633ed82:0/SimpleConnection@483b0690 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59430]
+2023-12-17 15:05:45.872  INFO 32758 --- [main] u.s.a.s.UserServiceAMQPServerApplication : Started UserServiceAMQPServerApplication in 4.353 seconds (JVM running for 5.319)
