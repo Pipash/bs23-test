@@ -24,6 +24,21 @@ services:
       - cache
     networks:
       - user-app-network
+  # user-app-amqp-server-container:
+  #   image: user-app-amqp-server:1
+  #   build:
+  #     context: ./user-service-amqp-server
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - /data/user-app-amqp-server
+  #   ports:
+  #     - "9090:9090"
+  #   links:
+  #     - cache
+  #   depends_on:
+  #     - cache
+  #   networks:
+  #     - user-app-network
 
 networks:
   user-app-network:

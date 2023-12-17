@@ -24,3 +24,11 @@
 2023-12-17 15:05:45.778  INFO 32758 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
 2023-12-17 15:05:45.806  INFO 32758 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5633ed82:0/SimpleConnection@483b0690 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59430]
 2023-12-17 15:05:45.872  INFO 32758 --- [main] u.s.a.s.UserServiceAMQPServerApplication : Started UserServiceAMQPServerApplication in 4.353 seconds (JVM running for 5.319)
+2023-12-17 15:10:22.562  INFO 33565 --- [main] .s.UserServiceAMQPServerApplicationTests : Starting UserServiceAMQPServerApplicationTests using Java 11.0.21 on pipash with PID 33565 (started by pipash in /var/www/html/bs23-test/user-service-amqp-server)
+2023-12-17 15:10:22.564  INFO 33565 --- [main] .s.UserServiceAMQPServerApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-12-17 15:10:24.846  INFO 33565 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-12-17 15:10:24.953  INFO 33565 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4ac86d6a:0/SimpleConnection@74b86971 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 35134]
+2023-12-17 15:10:25.023  INFO 33565 --- [main] .s.UserServiceAMQPServerApplicationTests : Started UserServiceAMQPServerApplicationTests in 2.848 seconds (JVM running for 4.085)
+2023-12-17 15:10:25.413  INFO 33565 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-12-17 15:10:26.021  INFO 33565 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-12-17 15:10:26.027  INFO 33565 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
